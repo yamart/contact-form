@@ -1,0 +1,42 @@
+.form-component {
+    display: block;
+    overflow: hidden;
+    margin-top: 50px;
+
+    .form-header {
+        padding: 20px;
+    }
+
+    .form-body {
+        padding: 20px;
+        border: 1px solid #cacaca;
+        @extend %border-radius;
+        
+        textarea {
+            margin-bottom: 0;
+        }
+    }
+
+    .form-footer {
+        // background-color: #f3f1f1;
+        // border-top: 1px solid #cacaca;
+        padding: 20px;
+    }
+
+    .form-message {
+        @extend %border-radius;
+        margin-bottom: 20px;
+
+        &[data-type="error"] {
+            background-color: rgba(darkred,.2);
+            border: 1px solid darkred;
+            color: darkred;            
+        }
+
+        &[data-type="success"] {
+            background-color: rgba(green,.2);
+            border: 1px solid green;
+            color: green;            
+        }        
+    }
+}

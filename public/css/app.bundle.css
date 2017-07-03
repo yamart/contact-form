@@ -1,0 +1,122 @@
+html, body {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #555; }
+
+h1 {
+  font-size: 18px;
+  margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.form-component .form-body, .form-component .form-message, input[type="text"],
+input[type="email"],
+textarea, input[type="button"], .messages-component .messages-body, .messages-component .msg-item .remove-btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.form-component {
+  display: block;
+  overflow: hidden;
+  margin-top: 50px; }
+  .form-component .form-header {
+    padding: 20px; }
+  .form-component .form-body {
+    padding: 20px;
+    border: 1px solid #cacaca; }
+    .form-component .form-body textarea {
+      margin-bottom: 0; }
+  .form-component .form-footer {
+    padding: 20px; }
+  .form-component .form-message {
+    margin-bottom: 20px; }
+    .form-component .form-message[data-type="error"] {
+      background-color: rgba(139, 0, 0, 0.2);
+      border: 1px solid darkred;
+      color: darkred; }
+    .form-component .form-message[data-type="success"] {
+      background-color: rgba(0, 128, 0, 0.2);
+      border: 1px solid green;
+      color: green; }
+
+.app {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: auto; }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #cacaca;
+  margin-bottom: 20px;
+  font-size: 14px; }
+
+input[type="button"] {
+  padding: 10px 15px;
+  background-color: #555;
+  border: 1px solid #555;
+  color: white;
+  font-size: 14px; }
+
+.messages-component {
+  display: block;
+  overflow: hidden;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px; }
+  .messages-component .messages-header {
+    padding: 20px; }
+  .messages-component .messages-body {
+    padding: 20px;
+    border: 1px solid #cacaca; }
+  .messages-component .msg-item p {
+    margin: 0; }
+  .messages-component .msg-item .remove-btn {
+    cursor: pointer;
+    display: block;
+    width: 60px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    background: #555;
+    color: white;
+    font-size: 12px;
+    margin-top: 5px; }
+  .messages-component .msg-item:not(:last-of-type) {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cacaca; }
+
+.bar {
+  display: block;
+  padding: 20px;
+  background: #f3f1f1;
+  border-bottom: 1px solid #cacaca; }
+  .bar ul {
+    display: block;
+    margin: 0;
+    padding: 0; }
+    .bar ul li {
+      display: inline-block;
+      margin-right: 20px; }
+      .bar ul li a {
+        color: #555;
+        text-decoration: none; }
+        .bar ul li a.active {
+          font-weight: bold; }
+
+/*# sourceMappingURL=app.bundle.css.map*/
