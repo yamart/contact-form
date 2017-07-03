@@ -1,22 +1,16 @@
-# Robot Movement
+# Contact Form
 
-Just a simulation of a toy robot moving on a square tabletop.
+Just a simple form container
+
+## Demo 
+You can check out the demo version at: http://yamart.net/demo/contact-form/
 
 ## Usage
 
 ```Javascript
-git clone https://github.com/yamart/robot-movement.git
-cd robot-movement
+https://github.com/yamart/contact-form.git
+cd contact-form
 npm install
 ```
 
-use `robot.js` in your own project, or you can see how it works by trying the demo version, in `public/index.html`
-
-## Available Commands
-
-- `PLACE`: put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.
-- `MOVE`: move the toy robot one unit forward in the direction it is currently facing, or backward by passing `false` to the function.
-- `LEFT`: rotate the robot 90 degrees in the left without changing the position of the robot.
-- `RIGHT`: rotate the robot 90 degrees in the right without changing the position of the robot.
-- `REPORT`: Return the robot's current position
-- `CHECK`: Check if movement to X,Y is allowed
+use `webpack --watch` to compile both javascript and sass.
