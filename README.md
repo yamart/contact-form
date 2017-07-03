@@ -8,7 +8,7 @@ You can check out the demo version at: http://yamart.net/demo/contact-form/
 ## Usage
 
 ```Javascript
-https://github.com/yamart/contact-form.git
+git clone https://github.com/yamart/contact-form.git
 cd contact-form
 npm install
 ```
