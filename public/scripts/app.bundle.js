@@ -33342,7 +33342,8 @@ class Messages extends React.Component {
         super(props);
         this.onRemoveClick = this.onRemoveClick.bind(this);
     }
-    onRemoveClick(i) {
+    onRemoveClick(e) {
+        let i = e.target.getAttribute('data-index');
         LocalStorage_1.default.removeAt('messages', i);
         this.forceUpdate();
     }
@@ -33358,7 +33359,7 @@ class Messages extends React.Component {
                         React.createElement("strong", null, d.name)),
                     React.createElement("p", null, d.mail),
                     React.createElement("p", null, d.message),
-                    React.createElement("div", { className: "remove-btn", onClick: this.onRemoveClick.bind(null, i) }, "Remove")));
+                    React.createElement("div", { className: "remove-btn", "data-index": i, onClick: this.onRemoveClick }, "Remove")));
             }) : React.createElement("div", { className: "msg-empty" }, "No Messages Found"))));
     }
 }

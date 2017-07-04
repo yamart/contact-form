@@ -8,7 +8,8 @@ class Messages extends React.Component {
         this.onRemoveClick = this.onRemoveClick.bind(this);
     }
 
-    onRemoveClick(i) {
+    onRemoveClick(e) {
+        let i = (e.target as HTMLElement).getAttribute('data-index');
         LocalStorage.removeAt('messages',i);
         this.forceUpdate();
     }
@@ -31,7 +32,7 @@ class Messages extends React.Component {
                                     <p><strong>{d.name}</strong></p>
                                     <p>{d.mail}</p>
                                     <p>{d.message}</p>
-                                    <div className="remove-btn" onClick={this.onRemoveClick.bind(null,i)}>Remove</div>
+                                    <div className="remove-btn" data-index={i} onClick={this.onRemoveClick}>Remove</div>
                                 </div>
                             )
                         }) : <div className="msg-empty">No Messages Found</div>
